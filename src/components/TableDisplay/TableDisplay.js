@@ -168,29 +168,28 @@ const TableDisplay = () => {
   </table>
 </div>
 
-        <div className="d-flex justify-content-between align-items-center mt-3">
-          <div>
-            <span>
-              Page <strong>{pageIndex + 1} of {pageOptions.length}</strong>
-            </span>
-            <select
-              value={pageSize}
-              onChange={e => setPageSize(Number(e.target.value))}
-              className="form-select d-inline-block w-auto ms-2"
-            >
-              {[10, 20, 30, 40, 50].map(size => (
-                <option key={size} value={size}>Show {size}</option>
-              ))}
-            </select>
-          </div>
-
-          <div className="btn-group">
-            <Button onClick={() => gotoPage(0)} disabled={!canPreviousPage} variant="outline-primary">{'<<'}</Button>
-            <Button onClick={() => previousPage()} disabled={!canPreviousPage} variant="outline-primary">Previous</Button>
-            <Button onClick={() => nextPage()} disabled={!canNextPage} variant="outline-primary">Next</Button>
-            <Button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage} variant="outline-primary">{'>>'}</Button>
-          </div>
-        </div>
+<div className="d-flex flex-column flex-md-row justify-content-between align-items-center mt-3 gap-3">
+  <div className="d-flex align-items-center">
+    <span className="me-2">
+      Page <strong>{pageIndex + 1} of {pageOptions.length}</strong>
+    </span>
+    <select
+      value={pageSize}
+      onChange={e => setPageSize(Number(e.target.value))}
+      className="form-select d-inline-block w-auto"
+    >
+      {[10, 20, 30, 40, 50].map(size => (
+        <option key={size} value={size}>Show {size}</option>
+      ))}
+    </select>
+  </div>
+  <div className="btn-group">
+    <Button onClick={() => gotoPage(0)} disabled={!canPreviousPage} variant="outline-primary" className="px-2 px-sm-3">{'<<'}</Button>
+    <Button onClick={() => previousPage()} disabled={!canPreviousPage} variant="outline-primary" className="px-2 px-sm-3">Previous</Button>
+    <Button onClick={() => nextPage()} disabled={!canNextPage} variant="outline-primary" className="px-2 px-sm-3">Next</Button>
+    <Button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage} variant="outline-primary" className="px-2 px-sm-3">{'>>'}</Button>
+  </div>
+</div>
       </div>
     </Container>
   );
