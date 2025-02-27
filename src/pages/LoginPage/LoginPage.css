@@ -1,0 +1,115 @@
+/* Login.css */
+.login-container {
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%; /* Adjust width for smaller devices */
+}
+
+.login-form input,.login-form select {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ensure inputs span the full container width */
+}
+
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form p {
+  margin-top: 10px;
+}
+
+.login-form h2 {
+  font-size: 30px;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screens <= 768px) */
+@media (max-width: 768px) {
+  .login-container {
+    width: 80%; /* Adjust container width */
+    padding: 15px;
+  }
+
+  .login-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .login-form h2 {
+    font-size: 24px; /* Smaller heading */
+  }
+}
+
+/* For mobile phones (screens <= 480px) */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%; /* Reduce container width further */
+    padding: 10px;
+  }
+
+  .login-form input {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .login-form h2 {
+    font-size: 20px;
+  }
+
+  .login-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* For very small screens (screens <= 360px) */
+@media (max-width: 360px) {
+  .login-container {
+    width: 95%; /* Maximum width for very small devices */
+  }
+
+  .login-form input {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .login-form h2 {
+    font-size: 18px;
+  }
+
+  .login-form button {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

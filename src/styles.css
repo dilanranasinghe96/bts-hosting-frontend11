@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .navbar-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .item-table th, .item-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  

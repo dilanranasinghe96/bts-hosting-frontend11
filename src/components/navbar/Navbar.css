@@ -1,0 +1,198 @@
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+  
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navbar-buttons .btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-buttons .btn:hover {
+  background-color: #45a049;
+}
+
+.add-btn {
+  background-color: #2196f3;
+}
+
+.add-btn:hover {
+  background-color: #0b7dda;
+}
+
+.scan-btn {
+  background-color: #f44336;
+}
+
+.scan-btn:hover {
+  background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-buttons {
+    width: 75%;
+    justify-content: flex-start;
+  }
+
+  .navbar-buttons .btn {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center ;
+  }
+
+  .navbar-buttons {
+    width:75%;
+    justify-content: flex-start;  
+  }
+
+  .navbar-buttons .btn {
+    width: 75%;
+    margin-bottom: 10px;
+    
+  }
+}
+
+ */
+
+ /* Base Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-btn, 
+.scan-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.add-btn {
+  background-color: #2196f3;
+}
+
+.add-btn:hover {
+  background-color: #0b7dda;
+}
+
+.scan-btn {
+  background-color: #f44336;
+}
+
+.scan-btn:hover {
+  background-color: #e53935;
+}
+
+
+
+/* Tablet Styles (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.3rem;
+  }
+
+  .navbar-buttons {
+    gap: 0.75rem;
+  }
+
+  .add-btn, 
+  .scan-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Styles (600px and below) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    width:75;
+    gap: 0.5rem;
+  }
+
+  .add-btn, 
+  .scan-btn {
+    width: 75%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Devices (375px and below) */
+@media (max-width: 375px) {
+  .navbar h1 {
+    font-size: 1rem;
+  }
+
+  .add-btn, 
+  .scan-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+}

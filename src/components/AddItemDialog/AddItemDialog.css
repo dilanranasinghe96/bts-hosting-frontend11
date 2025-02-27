@@ -1,0 +1,109 @@
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+  
+  .dialog-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: auto;
+    overflow-y: auto;
+    color: black;
+    height: 80%;
+  }
+  
+  .dialog-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .dialog-table th,
+  .dialog-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: black;
+  }
+  
+  .dialog-table th {
+    background-color: #f4f4f4;
+    text-align: left;  
+  }
+  
+  .dialog-table input {
+    width: fit-content ;  
+    padding: 5px;
+    text-align: center;
+
+  }
+  
+  .select-btn {
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .select-btn:hover {
+    background-color: #0b7dda;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .close-btn {
+    background-color: #f44336;
+  }
+  
+  .close-btn:hover {
+    background-color: #e53935;
+  }
+
+
+  
+  
+  @media (max-width: 768px) {
+    .dialog-content {
+      width: 80%;
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dialog-content {
+      width: 80%;
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .dialog-content {
+      width: 80%;
+      max-width: none;
+    }
+  }
+
+

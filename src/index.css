@@ -1,0 +1,16 @@
+/* Global index.css for resetting and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}

@@ -1,0 +1,115 @@
+/* Login.css */
+.register-container {
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%; /* Adjust width for smaller devices */
+}
+
+.register-form input,.register-form select {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ensure inputs span the full container width */
+}
+
+.register-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+.register-form p {
+  margin-top: 10px;
+}
+
+.register-form h2 {
+  font-size: 30px;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screens <= 768px) */
+@media (max-width: 768px) {
+  .register-container {
+    width: 80%; 
+    padding: 15px;
+  }
+
+  .register-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .register-form h2 {
+    font-size: 24px; 
+  }
+}
+
+/* For mobile phones (screens <= 480px) */
+@media (max-width: 480px) {
+  .register-container {
+    width: 90%; 
+    padding: 10px;
+  }
+
+  .register-form input {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .register-form h2 {
+    font-size: 20px;
+  }
+
+  .register-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* For very small screens (screens <= 360px) */
+@media (max-width: 360px) {
+  .register-container {
+    width: 95%; 
+  }
+
+  .register-form input {
+    padding: 5px;
+    font-size: 11px;
+  }
+
+  .register-form h2 {
+    font-size: 18px;
+  }
+
+  .register-form button {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

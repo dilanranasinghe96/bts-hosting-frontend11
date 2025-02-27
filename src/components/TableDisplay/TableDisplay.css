@@ -1,0 +1,84 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  /* max-width: 100%;
+  height: 600px;
+  overflow-x: auto; 
+  overflow-y: auto; */
+  width: 100%;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fg-table {
+  padding: 20px;
+  height: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  min-width: 1200px; /* Ensures table width doesn't shrink */
+  width: 100%;
+  table-layout: auto; /* Prevents column shrinking */
+}
+
+.fg-table th,
+.fg-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Prevents text wrapping */
+  width: auto;
+}
+
+.fg-table th {
+  background-color: hsl(0, 0%, 96%);
+  position: sticky;
+  top: 0; /* Ensures headers stay visible when scrolling */
+}
+
+.fg-table tr:nth-child(even) {
+  background-color: rgba(95, 65, 228, 0.6);
+}
+
+.fg-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.fg-table td {
+  font-size: 14px;
+}
+
+/* Ensure the table remains visible at smaller screen sizes */
+@media (max-width: 1024px) {
+  .table-container {
+    display: block;
+    overflow-x: scroll; /* Enables horizontal scrolling for smaller screens */
+  }
+
+  .fg-table {
+    min-width: 1200px; /* Prevents table from shrinking */
+  }
+}
+
+@media (max-width: 768px) {
+  .fg-table th,
+  .fg-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fg-table th,
+  .fg-table td {
+    padding: 6px;
+    font-size: 10px;
+  }
+}
