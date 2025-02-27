@@ -698,18 +698,7 @@ const ScannerWithForm = ({ onClose }) => {
                   display: isScanning ? "block" : "none",
                 }}
                 playsInline
-              />
-              
-              {/* Scanner animation */}
-              {isScanning && !loading && (
-                <div className="position-absolute w-100" style={{ 
-                  height: "2px", 
-                  background: "rgba(255, 0, 0, 0.7)",
-                  boxShadow: "0 0 8px rgba(255, 0, 0, 0.8)",
-                  animation: "scan 2s infinite linear",
-                  zIndex: 2
-                }}></div>
-              )}
+              />          
             </div>
 
             <canvas ref={canvasRef} style={{ display: "none" }} />
